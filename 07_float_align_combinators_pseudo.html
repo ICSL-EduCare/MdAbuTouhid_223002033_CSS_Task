@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Float, Alignment, Combinators and Pseudo Classes</title>
+  <style>
+    .photo {
+      float: left;
+      width: 120px;
+      height: 80px;
+      margin-right: 15px;
+      background: #ccc;
+      text-align: center;
+      padding-top: 30px;
+      box-sizing: border-box;
+    }
+
+    .container { overflow: auto; }
+
+    /* Descendant combinator */
+    .menu a { margin-right: 15px; }
+
+    /* Child combinator */
+    .list > li { font-weight: bold; }
+
+    /* Pseudo-class */
+    a:hover { text-decoration: underline; }
+
+    /* Pseudo-element */
+    p::first-letter { font-size: 2em; }
+
+    /* Attribute selector */
+    input[type="text"] { border: 2px solid gray; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="photo">IMAGE</div>
+    <p>This text wraps around the floated element.</p>
+  </div>
+
+  <div class="menu">
+    <a href="#">Home</a><a href="#">About</a>
+  </div>
+
+  <ul class="list">
+    <li>Parent item
+      <ul><li>Child item</li></ul>
+    </li>
+  </ul>
+
+  <p>First letter is styled using a pseudo-element.</p>
+  <input type="text" placeholder="Attribute selector">
+</body>
+</html>
