@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Links, Lists and Tables</title>
+  <style>
+    a:link { color: blue; }
+    a:hover { color: red; }
+
+    ul { list-style-type: square; }
+
+    table {
+      width: 80%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #555;
+      padding: 10px;
+      text-align: left;
+    }
+    tr:nth-child(even) { background: #eee; }
+  </style>
+</head>
+<body>
+  <h2>Link</h2>
+  <a href="#">Hover over this link</a>
+
+  <h2>List</h2>
+  <ul>
+    <li>HTML</li><li>CSS</li><li>JavaScript</li>
+  </ul>
+
+  <h2>Table</h2>
+  <table>
+    <tr><th>Name</th><th>Course</th></tr>
+    <tr><td>Abu</td><td>CSE</td></tr>
+    <tr><td>Student 2</td><td>CSS</td></tr>
+  </table>
+</body>
+</html>
