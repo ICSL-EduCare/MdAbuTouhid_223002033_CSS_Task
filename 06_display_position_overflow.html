@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Display, Position and Overflow</title>
+  <style>
+    .block { display: block; background: #ddd; margin: 5px; }
+    .inline { display: inline; background: #eee; }
+    .box {
+      width: 250px;
+      height: 100px;
+      overflow: auto;
+      border: 2px solid black;
+      background: #f6e2cd;
+    }
+    .relative { position: relative; left: 20px; }
+    .fixed {
+      position: fixed;
+      right: 10px;
+      bottom: 10px;
+      padding: 10px;
+      background: rgb(2, 139, 47);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <span class="block">Block element</span>
+  <span class="block">Another block</span>
+  <span class="inline">Inline</span>
+  <span class="inline">Inline</span>
+
+  <p class="relative">Relative positioning</p>
+
+  <div class="box">
+    This box demonstrates overflow. Add enough text to make the content
+    larger than the box and observe the scrollbar.
+  </div>
+
+  <div class="fixed">Fixed</div>
+</body>
+</html>
